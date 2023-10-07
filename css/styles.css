@@ -45,9 +45,8 @@ header {
 }
 .header {
   border-bottom: 1px solid rgba(231, 233, 252, 1);
-  box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16),
-  0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .current {
   color: #404bbf;
@@ -55,7 +54,7 @@ header {
 }
 
 .current::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -141,13 +140,14 @@ header {
 .section_one {
   background: #2e2f42;
   padding: 188px 0;
-  max-width: 1440px;
+  width: 1440px;
+  flex-shrink: 0;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/section_one/demn.png");
+    url("../images/section_one/people_office.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -232,8 +232,7 @@ header {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16),
-  0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .header_two_section_three {
   font-family: "Roboto", sans-serif;
@@ -287,9 +286,8 @@ header {
   width: calc((100% - 48px) / 3);
 }
 .section_four_li:hover {
-  box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16),
-  0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .services {
@@ -297,14 +295,20 @@ header {
   border-top: none;
   padding: 32px 16px;
 }
-
+.img_block {
+  position: relative;
+  overflow: hidden;
+}
+.section_four_li:hover .img_portfolio {
+  transform: translateY(0);
+}
 .img_portfolio {
   position: absolute;
   top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color:#f4f4fd;
+  color: #f4f4fd;
   padding: 40px 32px;
   background-color: #4d5ae5;
   height: 100%;
@@ -344,8 +348,9 @@ header {
   padding: 100px 0;
 }
 .footer .container {
-display: flex;
-align-items: baseline;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
 }
 .footer_logo_first {
   margin-right: 120px;
