@@ -84,6 +84,7 @@ header {
   gap: 40px;
   padding: 24px 0;
   align-items: center;
+  color: #404bbf
 }
 .header_address {
   display: flex;
@@ -149,7 +150,7 @@ header {
   margin: 0 auto;
   background-image:
   linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-          url(../images/section_one/people_office.png);
+          url(../images/section_one/people_office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
